@@ -30,5 +30,5 @@ Route::group([
         Route::post('me', 'AuthController@me');
     
     });
-    
+    //middleware
 Route::resource('contacts', 'ContactsController')->middleware('auth:api');
